@@ -4,10 +4,12 @@
     background-color: #08506f;
 }
 
-
+.photo {
+    max-width: 100px;
+}
 .header h1 {
     display: inline-block;
-    font-size: 42px
+    font-size: 60px
 }
 
 .header nav {
@@ -18,26 +20,36 @@
 }
 
 .header nav ul {
+   
     list-style-type: none;
 }
 
 .header nav ul li {
+   
     display: inline-block;
     margin-left: 25px;
 }
 
+.work {
+  column-rule-style: auto auto;
+}
+
+.about-me, header {
+font-size: 50px;
+justify-self: left;
+}
+
+.first-web-page {
+    width: 100%
+}
 section {
-    width: 70%; 
     margin: 20px auto;
     border-bottom: 5pv solid darkblue;
     background-color: bisque;
 }
-.grid-for-main {
-    display: grid; 
 
-}
 .card {
-    flex: 1 0 0;
+   flex: 1 0 0;
     padding: 10px;
     text-align: center;
     border-style: solid;
@@ -52,101 +64,32 @@ section {
   
   .card img {
     width: 100%;
-    min-width: 400px;
-  }
-/*
-.grid-container-for-wo {
-    display: grid;
-    border-radius: 15px;
-    grid-template-columns: auto auto;
-    background-color: #48b51298;
-    padding: 10px;
-}*/
-
-  .ben-folds-fan-page {
-    grid-column: 1 / 3;
-    background-color: rgba(187, 18, 18, 0.379);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-  }
-/*
-  .code-refactor {
-    background-color: rgba(255, 255, 255, 0.379);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-  .self-help-reference {
-    background-color: rgba(255, 255, 255, 0.379);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    min-width: 100px;
   }
 
-  .lyrics-game {
-    background-color: rgba(255, 255, 255, 0.379);
-    background-image: src("./assets/under-construction-2891888__480.png");
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-  .first-web-page {
-    width: 80%;
-    display: block;
-    max-width: 200px;
-    background-color: rgba(255, 255, 255, 0.379);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
 
- /*   
-.work-card .card-header {
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out:
-}
+ 
 
-.card-header {
-position: relative;
-margin-top: -20px;
-}
-  
-.about-me {
-    border: 5px;
-    border-color: darkgoldenrod;
-}
-.work {
-    border-color: black;
-}
+ .ben-folds-fan-page {
+     margin-top: 10px;
+     width: 100%;
+     display: flex;
+     flex-wrap: flex;
+ }
 
-main {
+ .code-refactor {
+     width: 100%; 
+     display: flex; 
+     flex-wrap: flex;
+ }
+ .self-help-reference {
+     width: 100%;
+     display: flex;
+     flex-wrap: flex; 
+ }
+
+.lyrics-game {
+    width: 100%; 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: flex;
 }
-/*
-aside {
-    flex: 1;
-    background-color: darkkhaki;
-    padding: 50px;
-    text-align: left;
-}
-
-.section {
-    border: 5px;
-    border-color: chartreuse;
-    flex: 4; 
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer {
-    display: flex;
-    padding: 20px;
-    text-align: center;
-    background-color: darkslategrey;
-}
-
-*/
