@@ -1,36 +1,24 @@
 * {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #053d55;
+    background-color: #08506f;
 }
 
-body {
-     /*box-sizing: border-box;
-   display: grid*/
-    padding: 10px;
-    
-}
 
 .header h1 {
     display: inline-block;
     font-size: 42px
 }
 
-/*a {
-    color: #ffffff;
-    text-decoration: none;
-}*/
-
 .header nav {
     padding-top: 15px;
     margin-right: 40px;
     float: right;
-    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
     font-size: 20px;
 }
 
 .header nav ul {
-    /*list-style-type: none;*/
+    list-style-type: none;
 }
 
 .header nav ul li {
@@ -38,41 +26,49 @@ body {
     margin-left: 25px;
 }
 
-.grid-for-main {
-    display: block;
-    /*display: grid;*/
-    grid-template-columns: auto auto auto;
-    background-color: tomato;
-    padding: 10px;
-    border: 1px solid beige
+section {
+    width: 70%; 
+    margin: 20px auto;
+    border-bottom: 5pv solid darkblue;
+    background-color: bisque;
 }
-/*.grid-container-for-work {
-    /*display: grid;*/
-    /*display: block;*/
-    /*content: box;
-    border: yellow;
-    border-radius: 5px;
-    box-sizing: content-box;
-}*/
+.grid-for-main {
+    display: grid; 
 
-
-
-.grid-container-for-work {
-    display: grid;
-    grid-gap: 25px 75px;
-    grid-template-columns: auto auto;
-    background-color: #2196F3;
+}
+.card {
+    flex: 1 0 0;
     padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
   }
   
-  .ben-folds-fan-page {
-    background-color: rgba(255, 255, 255, 0.379);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+  .card header {
     padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    background: #13293d;
+    color: #fff;
   }
+  
+  .card img {
+    width: 100%;
+    min-width: 400px;
+  }
+/*
+.grid-container-for-wo {
+    display: grid;
+    border-radius: 15px;
+    grid-template-columns: auto auto;
+    background-color: #48b51298;
+    padding: 10px;
+}*/
 
+  .ben-folds-fan-page {
+    grid-column: 1 / 3;
+    background-color: rgba(187, 18, 18, 0.379);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  }
+/*
   .code-refactor {
     background-color: rgba(255, 255, 255, 0.379);
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -90,13 +86,16 @@ body {
 
   .lyrics-game {
     background-color: rgba(255, 255, 255, 0.379);
+    background-image: src("./assets/under-construction-2891888__480.png");
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
   }
   .first-web-page {
-      display: block;
+    width: 80%;
+    display: block;
+    max-width: 200px;
     background-color: rgba(255, 255, 255, 0.379);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -104,6 +103,17 @@ body {
     text-align: center;
   }
 
+ /*   
+.work-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out:
+}
+
+.card-header {
+position: relative;
+margin-top: -20px;
+}
+  
 .about-me {
     border: 5px;
     border-color: darkgoldenrod;
