@@ -2,11 +2,30 @@
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #08506f;
+    margin: 5px 5px 5px 5px;
+    
 }
 
-.photo {
-    max-width: 100px;
+/*main {
+    
 }
+
+body {
+  
+}*/
+
+.photo {
+    max-width: 120px;
+    border-color: #13293d;
+    border-width: 5px;
+    border-radius: 5px;
+
+}
+
+h1 {
+    font-size: 50px;
+}
+
 .header h1 {
     display: inline-block;
     font-size: 60px
@@ -30,46 +49,67 @@
     margin-left: 25px;
 }
 
-.work {
-  column-rule-style: auto auto;
+p {
+    font-size: 15px;
+}
+h2 {
+    font-size: 50px;;
 }
 
-.about-me, header {
-font-size: 50px;
-justify-self: left;
-}
 
-.first-web-page {
-    width: 100%
-}
-section {
-    margin: 20px auto;
-    border-bottom: 5pv solid darkblue;
-    background-color: bisque;
-}
+/* Why can't I put all cards in some columns? or a grid? .all-cards {
+  box-align: left;
+} */
 
-.card {
-   flex: 1 0 0;
-    padding: 10px;
+.big-card {
+    flex: 1 0 0;
+    min-height: 100px ;
+    min-width: 100px;
+    padding: 5px;
     text-align: center;
-    border-style: solid;
-    border-width: 1px;
-  }
-  
-  .card header {
-    padding: 20px;
+    
+
+    /* background-color: bisque; */
+   }
+   
+   .big-card h3 {
+    align-self: left;;
+    font-size: 30px;
+    padding: 5px;
+    width: 60%;
+    padding: 5px;
+    text-align: center;
     background: #13293d;
     color: #fff;
+   }
+   .big-card img {
+     width: 100%;
+     /* min-width: 50px; */
+    align-content: left;
+   }
+.small-cards {
+    /* display: flex; */
+ /* flex-wrap: flex;  */
+ /* columns: auto auto; */
+    max-width: 350px;
+   flex: 1 1 0;
+    padding: 5px;
+    text-align: center;
   }
   
-  .card img {
+  .small-cards h3 {
+    font-size: 20px;
+    background: #13293d;
+    color: #fff;
+    padding: 5px;
+  }
+  
+  .small-cards img {
     width: 100%;
     min-width: 100px;
   }
 
-
- 
-
+  /*
  .ben-folds-fan-page {
      margin-top: 10px;
      width: 100%;
@@ -93,3 +133,4 @@ section {
     display: flex;
     flex-wrap: flex;
 }
+
