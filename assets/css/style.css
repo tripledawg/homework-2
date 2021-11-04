@@ -6,6 +6,8 @@
     
 }
 
+
+
 /*main {
     
 }
@@ -32,6 +34,7 @@ h1 {
 }
 
 .header nav {
+    display: flex;
     padding-top: 15px;
     margin-right: 40px;
     float: right;
@@ -39,98 +42,97 @@ h1 {
 }
 
 .header nav ul {
-   
     list-style-type: none;
 }
 
 .header nav ul li {
-   
     display: inline-block;
     margin-left: 25px;
 }
 
 p {
-    font-size: 15px;
+    display: flex;
+    font-size: 1vw;
 }
+
 h2 {
-    font-size: 50px;;
+    font-size: 50px;
 }
-
-
-/* Why can't I put all cards in some columns? or a grid? .all-cards {
-  box-align: left;
-} */
 
 .big-card {
-    flex: 1 0 0;
-    min-height: 100px ;
-    min-width: 100px;
-    padding: 5px;
-    text-align: center;
-    
-
-    /* background-color: bisque; */
-   }
+    display: flex;
+    min-height: 25vw;
+    min-width: 20px;
+    flex: 1 0 200px;
+    /* flex-wrap: wrap; */
+    width: 100%; 
+    border-style: solid;
+    padding: 5px; 
+    background-color: bisque;
+    } 
    
    .big-card h3 {
-    align-self: left;;
-    font-size: 30px;
-    padding: 5px;
-    width: 60%;
+    font-size: 25px;
     padding: 5px;
     text-align: center;
     background: #13293d;
     color: #fff;
+   } 
+   .big-card img { 
+    display: flex;
+    width: 100%; 
+    min-height: 200px;
+    min-width: 300px;
+    max-height: fit-content;
    }
-   .big-card img {
-     width: 100%;
-     /* min-width: 50px; */
-    align-content: left;
-   }
-.small-cards {
-    /* display: flex; */
- /* flex-wrap: flex;  */
- /* columns: auto auto; */
-    max-width: 350px;
-   flex: 1 1 0;
-    padding: 5px;
-    text-align: center;
+
+
+.small-card { 
+     /* display: flex; */
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    float: left;
+    width: 25%; 
+    max-width: 270px;
   }
   
-  .small-cards h3 {
+  .small-card h3 {
+    text-align: center;
     font-size: 20px;
     background: #13293d;
     color: #fff;
-    padding: 5px;
+    padding: 15px;
   }
-  
-  .small-cards img {
+
+  .small-card img {
+    /* display: flex; */
     width: 100%;
-    min-width: 100px;
+    max-width: 270px;
   }
 
-  /*
- .ben-folds-fan-page {
-     margin-top: 10px;
-     width: 100%;
-     display: flex;
-     flex-wrap: flex;
- }
 
- .code-refactor {
-     width: 100%; 
-     display: flex; 
-     flex-wrap: flex;
- }
- .self-help-reference {
-     width: 100%;
-     display: flex;
-     flex-wrap: flex; 
- }
-
-.lyrics-game {
-    width: 100%; 
-    display: flex;
-    flex-wrap: flex;
+ @media screen and (max-width: 992px) {
+  .small-card {
+      width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+ .small-card {
+        width: 100%;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    .header {
+           order: 2;
+       }
+   }
+
+#resume {
+    display: block;
+}
+   footer {
+       display: block; 
+       font-size: 15px;
+   }
