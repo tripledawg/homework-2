@@ -2,7 +2,7 @@
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #08506f;
-    margin: 5px 5px 5px 5px;
+    margin: 10px 5px 5px 5px;
     
 }
 
@@ -17,6 +17,8 @@ body {
 }*/
 
 .photo {
+    
+    margin-top: 10px;
     max-width: 120px;
     border-color: #13293d;
     border-width: 5px;
@@ -38,7 +40,7 @@ h1 {
     padding-top: 15px;
     margin-right: 40px;
     float: right;
-    font-size: 20px;
+    font-size: 3vw;
 }
 
 .header nav ul {
@@ -46,25 +48,48 @@ h1 {
 }
 
 .header nav ul li {
+    display: flex;
+    flex: 1 0 20px;
     display: inline-block;
     margin-left: 25px;
+  
+
 }
 
 p {
     display: flex;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 h2 {
     font-size: 50px;
+    margin-bottom: 20px;
+}
+.work {
+   display: flex; 
+   flex-wrap: wrap;
+   margin-top: 2%;
+   justify-content: space-around;
 }
 
+.flex-small-cards {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-right: 5%;
+    /* justify-content: */
+ }
 .big-card {
     display: flex;
-    min-height: 25vw;
-    min-width: 20px;
-    flex: 1 0 200px;
+    /* flex: 2 1 10vw; */
+    min-height: 100px;
+    /* min-width: 20px; */
+    min-width:200px;
+    /* flex: 1 0 200px; */
+    flex: 1 0 100px;
     /* flex-wrap: wrap; */
+    max-height: 300px;
+    max-width: 400px;
     width: 100%; 
     border-style: solid;
     padding: 5px; 
@@ -81,23 +106,28 @@ h2 {
    .big-card img { 
     display: flex;
     width: 100%; 
-    min-height: 200px;
-    min-width: 300px;
-    max-height: fit-content;
+    height: 100%;
+    /* min-height: 10vw;
+    min-width: 100px;
+    max-height: px; */
    }
 
-
 .small-card { 
+    flex: 1 0 0;
+    width: 50%; 
      /* display: flex; */
     border-style: solid;
     border-width: 1px;
     padding: 10px;
-    float: left;
-    width: 25%; 
-    max-width: 270px;
+    /* float: left; */
+   
+    max-width: 350px;
+    /* max-height: 100px; */
   }
   
   .small-card h3 {
+      /* display: inline; */
+      /* display: inline-block; */
     text-align: center;
     font-size: 20px;
     background: #13293d;
@@ -108,31 +138,35 @@ h2 {
   .small-card img {
     /* display: flex; */
     width: 100%;
-    max-width: 270px;
+    max-width: 350px;
+    padding: 5px;
+    /* max-height: 100px; */
   }
 
-
+/* 
  @media screen and (max-width: 992px) {
   .small-card {
-      width: 50%;
+      width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
  .small-card {
-        width: 100%;
+        width: 50%;
     }
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .header {
            order: 2;
        }
-   }
+   } */
 
 #resume {
     display: block;
 }
-   footer {
+
+footer {
        display: block; 
-       font-size: 15px;
+       font-size: 30px;
+       margin-top: 2px;
    }
