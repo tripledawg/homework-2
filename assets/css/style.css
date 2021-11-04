@@ -77,14 +77,14 @@ h2 {
     flex-wrap: wrap;
     margin-top: 2%;
     margin-right: 5%;
-    /* justify-content: */
+    justify-content: space-around;
  }
 .big-card {
     display: flex;
     /* flex: 2 1 10vw; */
-    min-height: 100px;
+    min-height: 150px;
     /* min-width: 20px; */
-    min-width:200px;
+    min-width:250px;
     /* flex: 1 0 200px; */
     flex: 1 0 100px;
     /* flex-wrap: wrap; */
