@@ -1,38 +1,27 @@
 * {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #08506f;
-    margin: 10px 5px 5px 5px;
-    
+    background-color: #15272e;
+    margin: 5px 5px 5px 5px;
 }
 
-
-
-/*main {
-    
-}
-
-body {
-  
-}*/
 
 .photo {
-    
-    margin-top: 10px;
-    max-width: 120px;
-    border-color: #13293d;
-    border-width: 5px;
-    border-radius: 5px;
+   padding: auto;
+   width: 20%;
+    max-width: 130px;
+    /* border-color:white;
+    border-width: 5px; */
+    filter: drop-shadow(7px 7px 7px black);
 
 }
 
-h1 {
-    font-size: 50px;
+.header {
+    background-color: orange;
 }
-
 .header h1 {
     display: inline-block;
-    font-size: 60px
+    font-size: 30px;
 }
 
 .header nav {
@@ -40,7 +29,7 @@ h1 {
     padding-top: 15px;
     margin-right: 40px;
     float: right;
-    font-size: 3vw;
+    font-size: 3vm;
 }
 
 .header nav ul {
@@ -52,25 +41,71 @@ h1 {
     flex: 1 0 20px;
     display: inline-block;
     margin-left: 25px;
-  
-
 }
+
+nav a:hover {
+    color: rgba(245, 168, 85, 0.975);
+  }
+/* 
+.work a {
+    border-width: 5px;
+    color:rgba(245, 168, 85, 0.975);
+    border-color: red;
+  } */
+  
 
 p {
     display: flex;
-    font-size: 2vw;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
+
 .work {
    display: flex; 
    flex-wrap: wrap;
    margin-top: 2%;
-   justify-content: space-around;
+   justify-content: center;
 }
+
+
+.big-card {
+    display: flex;
+    min-height: 150px;
+    min-width:350px;
+    flex: 1 0 100px;
+    max-height: 300px;
+    max-width: 400px;
+    width: 100%; 
+    border-style: solid;
+    padding: 5px; 
+    filter: drop-shadow(6px 16px 10px black);
+    } 
+
+   .big-card h3 {
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    background: #13293d;
+    color: orange;
+   } 
+
+   .big-card img { 
+    display: flex;
+    width: 100%; 
+    height: 100%;
+    float: left;
+   }
+.big-card a {
+    border-style: solid;
+}
+  .big-card a:hover {
+    border-width: 5px;
+    border-color:rgba(245, 168, 85, 0.975);
+  }
+
 
 .flex-small-cards {
     display: flex; 
@@ -79,87 +114,45 @@ h2 {
     margin-right: 5%;
     justify-content: space-around;
  }
-.big-card {
-    display: flex;
-    /* flex: 2 1 10vw; */
-    min-height: 150px;
-    /* min-width: 20px; */
-    min-width:250px;
-    /* flex: 1 0 200px; */
-    flex: 1 0 100px;
-    /* flex-wrap: wrap; */
-    max-height: 300px;
-    max-width: 400px;
-    width: 100%; 
-    border-style: solid;
-    padding: 5px; 
-    background-color: bisque;
-    } 
-   
-   .big-card h3 {
-    font-size: 25px;
-    padding: 5px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
-   } 
-   .big-card img { 
-    display: flex;
-    width: 100%; 
-    height: 100%;
-    /* min-height: 10vw;
-    min-width: 100px;
-    max-height: px; */
-   }
 
-.small-card { 
-    flex: 1 0 0;
+    .small-card { 
+    /* flex: 1 0 0; */
     width: 50%; 
-     /* display: flex; */
     border-style: solid;
     border-width: 1px;
     padding: 10px;
-    /* float: left; */
-   
-    max-width: 350px;
-    /* max-height: 100px; */
-  }
+    max-width: 250px;
+    filter: drop-shadow(6px 16px 10px black);
+    }
   
-  .small-card h3 {
-      /* display: inline; */
-      /* display: inline-block; */
+    .small-card h3 {
     text-align: center;
     font-size: 20px;
     background: #13293d;
-    color: #fff;
+    color: orange;
     padding: 15px;
-  }
+    }
 
-  .small-card img {
-    /* display: flex; */
+    .small-card img {
     width: 100%;
     max-width: 350px;
-    padding: 5px;
-    /* max-height: 100px; */
-  }
-
-/* 
- @media screen and (max-width: 992px) {
-  .small-card {
-      width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
- .small-card {
-        width: 50%;
+    padding: 1px;
+    float: left;
     }
-} */
+.small-card a img{
+    border-style: solid;
+}
+    .small-card a img:hover {
+        border-color: rgba(245, 168, 85, 0.975);
+        }
 
-/* @media screen and (max-width: 768px) {
-    .header {
-           order: 2;
-       }
-   } */
+
+.contact-me {
+      display:inline;
+      font-size: 25px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+  }
 
 #resume {
     display: block;
@@ -170,3 +163,13 @@ footer {
        font-size: 30px;
        margin-top: 2px;
    }
+    a:hover {
+       color:rgba(245, 168, 85, 0.975)
+   }
+
+
+ /* a:hover img{
+    border-width: 5px;
+    color:rgba(245, 168, 85, 0.975);
+    border-color: red;
+  }  */
