@@ -1,10 +1,23 @@
 * {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #15272e;
-    margin: 5px 5px 5px 5px;
+    margin: 3px 3px 3px 3px;
+    
 }
 
+main {
+    /* color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    margin: 3px 3px 3px 3px;
+    background-color: #15272e;
+}
+/* 
+{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px 5px 5px 5px;
+    background-color: #15272e;
+} */
 
 .photo {
    padding: auto;
@@ -17,26 +30,40 @@
 }
 
 .header {
-    background-color: orange;
+    /* color: white; */
+    /* display: block; */
+    background-image: url("../pano_background.jpg");
+    /* border: px; */
+    /* height: 100%; */
 }
 .header h1 {
-    display: inline-block;
+    /* color: white; */
+    display: block;
     font-size: 30px;
+    /* filter: drop-shadow(7px 7px 7px black); */
 }
 
 .header nav {
-    display: flex;
-    padding-top: 15px;
+    /* color: white; */
+    background-color: #13293d;
+    /* display: flex; */
+    display: block;
+    padding-top:5px;
     margin-right: 40px;
+    margin-bottom: 10px;
     float: right;
     font-size: 3vm;
+    filter: drop-shadow(7px 7px 7px black);
 }
 
 .header nav ul {
+    /* color: white; */
     list-style-type: none;
+    display: block;
 }
 
 .header nav ul li {
+    color: white;
     display: flex;
     flex: 1 0 20px;
     display: inline-block;
@@ -55,23 +82,33 @@ nav a:hover {
   
 
 p {
+    font-size:small;
     display: flex;
+    /* flex: 1 0 0 */
+    filter: drop-shadow(7px 7px 7px black)
 }
 
 h2 {
     font-size: 25px;
+    font-style: oblique;
     margin-bottom: 20px;
+    filter: drop-shadow(7px 7px 7px black);
+
+    
 }
 
 .work {
+    /* color: white; */
    display: flex; 
    flex-wrap: wrap;
    margin-top: 2%;
    justify-content: center;
+   /* border-color: white; */
 }
 
 
 .big-card {
+    /* color: white; */
     display: flex;
     min-height: 150px;
     min-width:350px;
@@ -80,6 +117,7 @@ h2 {
     max-width: 400px;
     width: 100%; 
     border-style: solid;
+    border-color: white;
     padding: 5px; 
     filter: drop-shadow(6px 16px 10px black);
     } 
@@ -97,15 +135,22 @@ h2 {
     width: 100%; 
     height: 100%;
     float: left;
+    border-style: solid;
+    border-color: white;
    }
-.big-card a {
+/* .big-card a {
     border-style: solid;
 }
   .big-card a:hover {
     border-width: 5px;
     border-color:rgba(245, 168, 85, 0.975);
-  }
-
+  } */
+  .big-card a img{
+    border-style: solid;
+}
+    .big-card a img:hover {
+        border-color: rgba(245, 168, 85, 0.975);
+        }
 
 .flex-small-cards {
     display: flex; 
@@ -138,6 +183,8 @@ h2 {
     max-width: 350px;
     padding: 1px;
     float: left;
+    border-style: solid;
+    border-color: white;
     }
 .small-card a img{
     border-style: solid;
@@ -146,26 +193,42 @@ h2 {
         border-color: rgba(245, 168, 85, 0.975);
         }
 
-
+/* 
 .contact-me {
       display:inline;
       font-size: 25px;
       margin-bottom: 20px;
       padding-bottom: 20px;
-  }
+  } */
 
 #resume {
     display: block;
 }
 
-footer {
-       display: block; 
-       font-size: 30px;
-       margin-top: 2px;
+footer { 
+    width: 100%;
+    background-color: #13293d;
+    align-self: center;
+    display: block; 
+    font-size: 25px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 2px;
+    text-align: center; 
+    justify-items: center;
+    filter: drop-shadow(6px 16px 10px black)
    }
     a:hover {
-       color:rgba(245, 168, 85, 0.975)
+       color:rgba(245, 168, 85, 0.975);
    }
+ /* .contact-me {
+       text-align: center;
+       justify-content: center;
+   } */
+
+   /* footer {
+
+    
+   } */
 
 
  /* a:hover img{

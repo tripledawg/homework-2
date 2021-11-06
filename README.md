@@ -1,6 +1,6 @@
 # 02 Advanced CSS: Portfolio
 
-I created a nav bar with an inline block display which kept the nav items together.  I added a hover pseudo class to turn the text color orange.  
+I created a nav bar with an inline block display which kept the nav items together.  I added a hover pseudo class to turn the text color orange on hover.  
 
 I created internal links for the nav bar items. 
 
@@ -10,11 +10,17 @@ To make my About Me paragrah text responsive, I found that just adding a display
 
 To make the first work card larger than the others I used flex alongside min and max width properties.  
 
-To make the small cards stack I created a container for all the small cards with a flex wrap property and gave the individual small cards a 50% width value. I tried starting with 25%, but the proportions seemed wrong that way.  
+I used pseudo classes to make the clickable images show a border color change as demonstrated in the mockup gif.  
 
-I added some drop shadows on the images for depth.  
+I also used pseudo classes to make the internal and external links change color on hover. 
 
-I decided to use the footer for the Contact Me links. 
+To make the small cards stack responsively. I created a container for all the small cards with a flex wrap property and gave the individual small cards a 50% width value. 
+
+I added some drop shadows on various elements for depth.  
+
+In class they said we could make this our own, so I went with a complementary muted blue and orange color palate. I decided to use the footer space for the Contact Me links.  I added a panorama for the header background image that complemented the colors I chose.  
+
+
   
 
 
