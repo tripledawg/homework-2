@@ -6,47 +6,28 @@
 }
 
 main {
-    /* color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
     margin: 3px 3px 3px 3px;
     background-color: #15272e;
 }
-/* 
-{
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 5px 5px 5px 5px;
-    background-color: #15272e;
-} */
-
+/*header with photo, background image and nav bar*/
 .photo {
    padding: auto;
    width: 20%;
     max-width: 130px;
-    /* border-color:white;
-    border-width: 5px; */
     filter: drop-shadow(7px 7px 7px black);
-
 }
 
 .header {
-    /* color: white; */
-    /* display: block; */
     background-image: url("../pano_background.jpg");
-    /* border: px; */
-    /* height: 100%; */
 }
+
 .header h1 {
-    /* color: white; */
     display: block;
     font-size: 30px;
-    /* filter: drop-shadow(7px 7px 7px black); */
 }
 
 .header nav {
-    /* color: white; */
     background-color: #13293d;
-    /* display: flex; */
     display: block;
     padding-top:5px;
     margin-right: 40px;
@@ -57,7 +38,6 @@ main {
 }
 
 .header nav ul {
-    /* color: white; */
     list-style-type: none;
     display: block;
 }
@@ -73,18 +53,10 @@ main {
 nav a:hover {
     color: rgba(245, 168, 85, 0.975);
   }
-/* 
-.work a {
-    border-width: 5px;
-    color:rgba(245, 168, 85, 0.975);
-    border-color: red;
-  } */
-  
-
+/*body of paragraph and headings*/
 p {
     font-size:small;
     display: flex;
-    /* flex: 1 0 0 */
     filter: drop-shadow(7px 7px 7px black)
 }
 
@@ -93,22 +65,19 @@ h2 {
     font-style: oblique;
     margin-bottom: 20px;
     filter: drop-shadow(7px 7px 7px black);
-
-    
 }
 
+/* responsive and wrapped titled images with links to work where applicable*/
 .work {
-    /* color: white; */
    display: flex; 
    flex-wrap: wrap;
    margin-top: 2%;
    justify-content: center;
-   /* border-color: white; */
+   text-align: center; 
 }
 
-
 .big-card {
-    /* color: white; */
+    justify-content: center;
     display: flex;
     min-height: 150px;
     min-width:350px;
@@ -138,21 +107,17 @@ h2 {
     border-style: solid;
     border-color: white;
    }
-/* .big-card a {
-    border-style: solid;
-}
-  .big-card a:hover {
-    border-width: 5px;
-    border-color:rgba(245, 168, 85, 0.975);
-  } */
+
   .big-card a img{
     border-style: solid;
 }
-    .big-card a img:hover {
+    .big-card a img:hover { /*psuedoclass*/
         border-color: rgba(245, 168, 85, 0.975);
         }
-
+        
+/*created a subclass for the other small cards to wrap*/   
 .flex-small-cards {
+    justify-content: center;
     display: flex; 
     flex-wrap: wrap;
     margin-top: 2%;
@@ -161,7 +126,6 @@ h2 {
  }
 
     .small-card { 
-    /* flex: 1 0 0; */
     width: 50%; 
     border-style: solid;
     border-width: 1px;
@@ -186,53 +150,27 @@ h2 {
     border-style: solid;
     border-color: white;
     }
-.small-card a img{
-    border-style: solid;
-}
-    .small-card a img:hover {
+        .small-card a img{
+        border-style: solid;
+        } /*psuedoclass*/
+         .small-card a img:hover {
         border-color: rgba(245, 168, 85, 0.975);
         }
-
-/* 
-.contact-me {
-      display:inline;
-      font-size: 25px;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-  } */
-
-#resume {
-    display: block;
-}
-
+/*footer with resume and other contact links*/
 footer { 
     width: 100%;
     background-color: #13293d;
-    align-self: center;
-    display: block; 
+   
     font-size: 25px;
     padding: 5px 5px 5px 5px;
     margin-top: 2px;
     text-align: center; 
-    justify-items: center;
-    filter: drop-shadow(6px 16px 10px black)
+    filter: drop-shadow(6px 16px 10px black);
    }
-    a:hover {
-       color:rgba(245, 168, 85, 0.975);
+
+footer ul li {
+    display: inline;
    }
- /* .contact-me {
-       text-align: center;
-       justify-content: center;
-   } */
-
-   /* footer {
-
-    
-   } */
-
-
- /* a:hover img{
-    border-width: 5px;
-    color:rgba(245, 168, 85, 0.975);
-    border-color: red;
-  }  */
+    a:hover {/*psuedoclass*/
+       color:rgba(133, 105, 76, 0.975);  
+   }

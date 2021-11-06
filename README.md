@@ -6,19 +6,23 @@ I created internal links for the nav bar items.
 
 I created a profile picture with a 20% size limited at a width of 130px for responsiveness. 
 
-To make my About Me paragrah text responsive, I found that just adding a display value of 'flex' on the p tag worked.  I tried using vw font increments and font percentages, but this seemed the best for all screen sizes.  
+To make my "About Me" paragrah text responsive, I used a small font size as a base and then added flex.   
 
 To make the first work card larger than the others I used flex alongside min and max width properties.  
 
-I used pseudo classes to make the clickable images show a border color change as demonstrated in the mockup gif.  
+I used pseudo classes to make the clickable images show a border color which chenged on hover as demonstrated in the mockup gif.  
 
 I also used pseudo classes to make the internal and external links change color on hover. 
 
-To make the small cards stack responsively. I created a container for all the small cards with a flex wrap property and gave the individual small cards a 50% width value. 
+To make the small cards stack responsively I created a container for all the small cards with a flex wrap property and gave the individual small cards a 50% width value. 
 
 I added some drop shadows on various elements for depth.  
 
-In class they said we could make this our own, so I went with a complementary muted blue and orange color palate. I decided to use the footer space for the Contact Me links.  I added a panorama for the header background image that complemented the colors I chose.  
+Our instructor said we could make this our own, so I went with a complementary muted blue and orange color palate. 
+
+I decided to use the footer space for the "Contact Me" links which I placed in an unordered list so that I could space them with styling.  
+
+I added a panorama for the header background image to complement the colors I chose.  
 
 
   
